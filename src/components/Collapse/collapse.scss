@@ -1,0 +1,78 @@
+.collapse-text-closed {
+    display: none;
+}
+
+.collapse-text-open {
+    display: flex;
+    position: relative;
+    color: red;
+    font-size: 18px;
+    background-color:#F6F6F6 ;
+    z-index: -1;
+    margin-right: -5px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    text-align:left;
+}
+
+.collapse-content {
+    display: flex;
+    flex-direction: row;
+    ;
+}
+
+.arrow-open {
+    display: flex;
+    transform: rotate(270deg);
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    right: 7px;
+    top: 2%;
+    font-size: 30px;
+    color: #F6F6F6;
+}
+
+.arrow-closed {
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    top: 2%;
+    font-size: 30px;
+    color: #F6F6F6;
+}
+
+.drop-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.drop-button {
+    width: 80%;
+    display: flex;
+    position: relative;
+    z-index: 7;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 24px;
+    background-color: #FF6060;
+    color: #F6F6F6;
+    border-radius: 5px;
+    cursor: pointer;
+}

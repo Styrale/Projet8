@@ -1,0 +1,65 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-bottom: 70px;
+}
+
+.catchphrase {
+  display: block;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  z-index: 20;
+ 
+
+  h2{
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+  }
+  
+}
+
+.img_header {
+    display: flex;
+    width: 100%;
+    border-radius: 30px;
+    filter: brightness(0.8);
+}
+
+@media screen and (max-width: 1547px) {
+  .catchphrase {
+   h2{
+     font-size: 42px;
+   }
+  }
+ }
+
+ @media screen and (max-width: 1367px) {
+  .catchphrase {
+   h2{
+     font-size: 36px;
+   }
+  }
+ }
+
+@media screen and (max-width: 1167px) {
+  .catchphrase {
+   h2{
+     font-size: 30px;
+   }
+  }
+ }
+  
+@media screen and (max-width: 1024px) {
+ .catchphrase {
+  h2{
+    font-size: 26px;
+  }
+ }
+}
