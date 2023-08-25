@@ -1,0 +1,46 @@
+.product-page{
+    width: 1240px;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+    height: 415px;
+}
+
+.slider-previous {
+    position: absolute;
+    top: 40%;
+    right: 95%;
+    height: 20%;
+    cursor: pointer;
+}
+
+.slider-next {
+    position: absolute;
+    top: 40%;
+    height: 20%;
+    left: 95%;
+    cursor: pointer;
+}
+
+.slider-pagination {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    top: 90%;
+    width: 10%;
+    right: 45%;
+    text-shadow: black -0.1em 0.1em 0.2em;
+}
+
+.active-picture img{
+    height: 100%;
+    width: 1240px;
+    object-fit: cover;
+}
+
+.slider-picture {
+    border-radius: 2%;
+}
+
