@@ -23,13 +23,7 @@ const Slider = ({ slides }) => {
       {slides.map((picture, index) => {
         return (
           <div
-            key={index}
-            className={
-              index === current
-                ? "active-picture"
-                : "inactive-picture"
-            }
-          >
+            key={index}className={index === current? "active-picture" : ""}>
             {index === current && (
               <>
                 {length > 1 ? (                

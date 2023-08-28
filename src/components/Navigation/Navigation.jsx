@@ -5,7 +5,9 @@ import Logo from '../../assets/logo_kasa.png';
 function Navigation() {
     return (
     <header className="header">
-        <img src={Logo} alt="Logo Kasa" className="logo" />
+        <NavLink to="/">
+            <img src={Logo} alt="Logo Kasa" className="logo" />
+        </NavLink>
         <nav>
             <ul>
                 <li>
@@ -14,7 +16,7 @@ function Navigation() {
                 </li>
                 <li>
                 <NavLink to="/about"
-                className={({ isActive }) => (isActive ? 'active' : '')}>A propos</NavLink>
+                className={({ isActive }) => (isActive ? 'active' : '')}>A Propos</NavLink>
                 </li>
             </ul>
             </nav>

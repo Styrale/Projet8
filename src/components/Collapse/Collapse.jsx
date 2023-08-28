@@ -18,19 +18,22 @@ function Collapse({ title, content }) {
             {title}
                 <img src={arrow} className={`${isOpen ? 'arrow-open' : 'arrow-closed'}`}/>
           </div>
-                <div className={`collapse-content ${!isOpen ? '' : 'content-slidein'} ${isOpen ? '' : 'slideout'}`}>
+                <div className={`collapse-content ${!isOpen ? '' : 'content-slidein'}`}>
                     {Array.isArray(content) ? (
-                      <div className={`collapselist ${firstVisit ? 'first-visit' : ''}`}>
-                        <ul className={`collapse-list-closed ${firstVisit ? 'first-visit' : ''} ${isOpen ? 'collapse-list-open' : 'slideout'} ${!isOpen ? '' : 'slidein'}`}>
+                      <div className={`collapse-list ${firstVisit ? 'first-visit' : ''}`}>
+                        <ul className={
+                          `collapse-list-open ${firstVisit ? 'first-visit' : ''}`
+                          }>
                           {content.map((equipment) => (
-                            <li key={equipment.id} className="collapse-list">
+                            <li key={equipment.id} className="collapse-list-element">
                               {equipment}
                             </li>
                           ))}
                         </ul>
                       </div>
                     ) : (
-                    <p className={`collapse-text-closed ${firstVisit ? 'first-visit' : ''} ${isOpen ? 'collapse-text-open' : 'slideout'} ${!isOpen ? '' : 'slidein'}`}>{content}</p>
+                    <p className={`collapse-text ${firstVisit ? 'first-visit' : ''}`}>{content}
+                    </p>
                   )}
                 </div>
         </div>

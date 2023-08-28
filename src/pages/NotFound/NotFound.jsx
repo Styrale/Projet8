@@ -1,10 +1,14 @@
 import React from 'react';
+import './notfound.scss'
+import { NavLink } from 'react-router-dom';
 
 const NotFound = () => {
   return (
-    <div>
-      <h1>Page non trouvée</h1>
-      <p>Désolé, la page que vous recherchez n'existe pas.</p>
+    <div className='notfound-page'>
+      <h1>404</h1>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <NavLink to="/"
+                className='active'>Retourner sur la page d'acceuil</NavLink>
     </div>
   );
 };

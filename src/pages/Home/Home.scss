@@ -1,3 +1,6 @@
+@import './../../scss/mixins.scss';
+@import './../../scss/variables.scss';
+
 .home {
   padding: 20px;
 }
@@ -7,13 +10,19 @@
 }
 
 .home-products {
-  padding: 40px;
+
+  gap: 20px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
   background-color: #F6F6F6;
   border-radius: 20px;
+  @include media-query(medium) {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 .listing-list {

@@ -1,26 +1,36 @@
+@import './../../scss/mixins.scss';
+@import './../../scss/variables.scss';
+
 .banner {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 95%;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   align-content: space-between;
   margin-bottom: 70px;
+  min-height: 111px;
+  height: fit-content;
+  
 }
 
 .catchphrase {
-  display: block;
+  display: flex;
   position: absolute;
-  left: 30%;
+  text-align: left;
+  left: 10%;
   right: 30%;
   z-index: 20;
- 
-
   h2{
     color: white;
     font-size: 48px;
     font-weight: 400;
+  }
+  @include media-query(medium) {
+    left: 30%;
+    right: 30%;
+    text-align: center;
   }
   
 }
@@ -28,8 +38,12 @@
 .img_header {
     display: flex;
     width: 100%;
+    min-height: 111px;
+    flex-shrink: 0;
     border-radius: 30px;
     filter: brightness(0.8);
+    object-fit: cover;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1547px) {
@@ -43,7 +57,7 @@
  @media screen and (max-width: 1367px) {
   .catchphrase {
    h2{
-     font-size: 36px;
+     font-size: 38px;
    }
   }
  }

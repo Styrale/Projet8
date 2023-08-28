@@ -1,5 +1,13 @@
+@import './../../scss/mixins.scss';
+@import './../../scss/variables.scss';
+
 .rating {
-    width: 196px;
     display: flex;
+    width: 156px;
+    height: 18px;
     justify-content: space-around;
+    @include media-query(medium) {
+        height: fit-content;
+        width: 196px;
+    }
 }
