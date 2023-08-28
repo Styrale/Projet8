@@ -19,7 +19,7 @@ const ProductPage = () => {
   useEffect(() => {
       const data = products.find((product) => product.id === productId);
       console.log(data)
-  if (data === null) {
+  if (data === undefined) {
     return navigate('/pas-trouve')
   }
   setProduct(data)
@@ -32,7 +32,7 @@ const ProductPage = () => {
 
 
   return (
-    <div className="product-page">
+    <div>
       <Slider slides={pictures} />
       <div className="product-page-content">
         <div className="product-page-informations">
@@ -51,7 +51,7 @@ const ProductPage = () => {
       </div>
       <div className="product-page-dropdowns">
         <Collapse title="Description" content={description} />
-        <Collapse title="Equipement" content={equipments} />
+        <Collapse title="Equipements" content={equipments} />
       </div>
     </div>
   );

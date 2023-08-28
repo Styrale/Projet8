@@ -1,10 +1,17 @@
+@import './../../scss/mixins.scss';
+@import './../../scss/variables.scss';
+
 .host {
-    margin-top: 20px;
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
     justify-content: space-between;
     align-items: center;
     width: 200px;
-    margin-bottom: 20px;
+    @include media-query(medium){
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .host-name {
@@ -32,5 +39,8 @@
 
 .host-photo {
     border-radius: 50%;
-    width: 38%;
+    width: 30%;
+    @include media-query(medium){
+        width: 38%;
+    }
 }

@@ -1,3 +1,6 @@
+@import './../../scss/mixins.scss';
+@import './../../scss/variables.scss';
+
 .footer {
     position: absolute;
     left: -0%;
@@ -11,8 +14,12 @@
     background-color: black;
     p {
         margin-top: 25px;
+        width: 30%;
         color: white;
         font-size: 16px;
+        @include media-query(medium){
+            width: 100%;
+        }
     }
 
 }
