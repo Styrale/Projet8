@@ -2,8 +2,8 @@ import React from "react";
 import './host.scss'
 
 const Host = ({ host }) => {
-  const isHostSplited = host.name.split(" ");
-  const [name, lastname] = isHostSplited;
+  const isHostSplit = host.name.split(" ");
+  const [name, lastname] = isHostSplit;
 
   return (
     <div className="host">
