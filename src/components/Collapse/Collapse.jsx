@@ -19,13 +19,13 @@ function Collapse({ title, content }) {
                 <img src={arrow} className={`${isOpen ? 'arrow-open' : 'arrow-closed'}`}/>
           </div>
                 <div className={`collapse-content ${!isOpen ? '' : 'content-slidein'}`}>
-                    {Array.isArray(content) ? (
+                {Array.isArray(content) ? (
                       <div className={`collapse-list ${firstVisit ? 'first-visit' : ''}`}>
                         <ul className={
                           `collapse-list-open ${firstVisit ? 'first-visit' : ''}`
                           }>
                           {content.map((equipment) => (
-                            <li key={equipment.id} className="collapse-list-element">
+                            <li key={equipment} className="collapse-list-element">
                               {equipment}
                             </li>
                           ))}
